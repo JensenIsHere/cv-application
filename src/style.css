@@ -8,9 +8,12 @@ body {
   background-color: #e7e7e7;
 }
 
-p {
+p,
+heading,
+label,
+button {
   font-family: "Inter";
-  font-weight: 500;
+  font-weight: 400;
 }
 
 nav {
@@ -45,6 +48,7 @@ nav {
 
 .header--option {
   margin-right: 12px;
+  font-weight: 500;
   font-size: 13px;
   text-align: center;
   color: #ffffff;
@@ -84,9 +88,133 @@ nav {
   margin: 0 0 50px 50px;
   font-size: 14px;
   line-height: 16px;
-  /* or 114% */
   letter-spacing: -0.015em;
-  color: #000000;
+}
+
+.cv {
+  margin: 30px 0 60px 50px;
+}
+
+.personal,
+.education,
+.work {
+  margin-bottom: 50px;
+}
+
+.personal,
+.education,
+.work {
+  width: 600px;
+}
+
+.heading {
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.015em;
+}
+
+label {
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: -0.015em;
+}
+
+.personal--label {
+  width: 75px;
+}
+
+input[type="text"],
+textarea {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 26px 7px 0;
+  background: #ffffff;
+  border: 1px solid #959595;
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  height: 20px;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+.personal--input {
+  width: 180px;
+}
+
+.school,
+.job {
+  margin-bottom: 25px;
+}
+
+.label--checkbox {
+  margin-bottom: 7px;
+}
+
+.school--label {
+  width: 93px;
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: -0.015em;
+}
+
+.school--input,
+.job--input {
+  width: 458px;
+}
+
+.school--input_date,
+.job--input_date {
+  width: 120px;
+}
+
+.job--label {
+  width: 93px;
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: -0.015em;
+}
+
+.job--label:nth-child(5) {
+  vertical-align: top;
+}
+
+textarea {
+  width: 458px;
+  height: 100px;
+}
+
+button {
+  width: 80px;
+  height: 29px;
+  background: #7a40f5;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+.cv--edit {
+  margin: 0 35px 0 100px;
 }
 
 .footer {
@@ -101,29 +229,4 @@ nav {
   font-weight: 500;
   font-size: 11px;
   color: #ffffff;
-}
-
-label {
-  margin-right: 7px;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: right;
-  letter-spacing: -0.015em;
-  color: #000000;
-}
-
-input,
-textarea {
-  background: #ffffff;
-  border: 1px solid #959595;
-  border-radius: 3px;
-}
-
-input {
-  height: 20px;
-}
-
-textarea {
-  width: 400px;
-  height: 100px;
 }
