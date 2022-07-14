@@ -9,7 +9,7 @@ export default class Hero extends React.Component {
         <div className="hero--img"></div>
         <p className="hero--tagline">Join us and you’ll never be a ghost.</p>
         <p className="hero--text">
-          At Figment, you’ll stand out in the crowd and rise to your potential
+          At Figment, you’ll stand out from the crowd and rise to your potential
           as you complete challenging projects in a fast-paced environment, with
           great compensation. Apply to our elite team today by filling out the
           form below.

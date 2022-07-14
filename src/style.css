@@ -112,9 +112,18 @@ label {
   color: #000000;
 }
 
-input {
-  height: 20px;
+input,
+textarea {
   background: #ffffff;
   border: 1px solid #959595;
   border-radius: 3px;
+}
+
+input {
+  height: 20px;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
 }
