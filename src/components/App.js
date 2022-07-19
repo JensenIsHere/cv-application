@@ -1,8 +1,7 @@
 import React from "react";
 import "../style.css";
 import Header from "./Header";
-import Hero from "./Hero";
-import CV from "./CV.js";
+import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
 export default class App extends React.Component {
@@ -10,8 +9,11 @@ export default class App extends React.Component {
     return (
       <div className="app">
         <Header />
-        <Hero />
-        <CV />
+        <Sidebar />
+        {
+          //Sidebar
+          //CV
+        }
         <Footer />
       </div>
     );
