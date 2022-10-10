@@ -2,6 +2,7 @@ import React from "react";
 import "../style.css";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+import CV from "./CV";
 import Footer from "./Footer";
 
 export default class App extends React.Component {
@@ -9,11 +10,10 @@ export default class App extends React.Component {
     return (
       <div className="app">
         <Header />
-        <Sidebar />
-        {
-          //Sidebar
-          //CV
-        }
+        <div className="main">
+          <Sidebar />
+          <CV />
+        </div>
         <Footer />
       </div>
     );

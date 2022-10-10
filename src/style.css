@@ -15,9 +15,9 @@ body {
 }
 
 p,
-heading,
 label,
-button {
+button,
+div {
   font-family: "Inter";
   font-weight: 400;
 }
@@ -39,7 +39,13 @@ nav {
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
+.main {
+  display: flex;
+  overflow-y: scroll;
+}
+
 .sidebar {
+  flex: none;
   width: 320px;
   height: 100%;
   background: #c6c6c6;
@@ -53,14 +59,174 @@ nav {
 
 .sidebar--title {
   font-size: 24px;
+  margin-left: 7px;
+}
+
+label {
+  display: inline-block;
+  width: 75px;
+  margin-right: 7px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: -0.015em;
+}
+
+input,
+textarea {
+  width: 156px;
+  height: 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid #959595;
+  border-radius: 2px;
+}
+
+textarea {
+  height: 100px;
+  vertical-align: top;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  vertical-align: top;
 }
 
 .personal {
-  height: 500px;
   padding: 10px 15px 15px;
   background: #eaeaea;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
+}
+
+.sidebar--title {
+  margin-bottom: 30px;
+}
+
+.sidebar--delete {
+  text-align: center;
+}
+
+.sidebar--button_delete {
+  width: 89px;
+  height: 34px;
+  background: #e19a9a;
+  border: 0;
+  border-radius: 7px;
+  font-family: "Inter";
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+.sidebar--ed_add,
+.sidebar--work_add {
+  width: 275px;
+  height: 46px;
+  margin-left: 13px;
+  background: #7a40f5;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 7px;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.015em;
+  color: #e1e1e1;
+}
+
+.sidebar--work_add {
+  margin-bottom: 21px;
+}
+
+.cv--area {
+  flex: none;
+  overflow-y: scroll;
+}
+
+.cv--paper {
+  width: 600px;
+  height: 776px;
+  margin: 21px 12px;
+  padding: 19px 39px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cvpersonal--area,
+.cvskills--area,
+.cvwork--area,
+.cveducation--area {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.cvpersonal--name,
+.cvskills--title,
+.cvwork--title,
+.cveducation--title {
+  font-family: "Karla";
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  color: #ddaf0b;
+}
+
+.cvskills--title,
+.cvwork--title,
+.cveducation--title {
+  font-size: 20px;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddaf0b;
+}
+
+.cvpersonal--name {
+  margin-bottom: 17px;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.cvpersonal--title,
+.cvpersonal--phone,
+.cvpersonal--email {
+  font-weight: 300;
+  letter-spacing: 0.15em;
+}
+
+.cvpersonal--title {
+  margin-bottom: 8px;
+}
+
+.cvpersonal--phone,
+.cvpersonal--email,
+.cvpersonal--inline_img {
+  display: inline-block;
+}
+
+.cvpersonal--inline_img > img {
+  margin-right: 10px;
+}
+
+.cvskills--title {
+  font-family: Karla;
+}
+
+.cvskills--c1,
+.cvskills--c2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+}
+
+.cvwork--flex,
+.cveducation--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cvwork--company,
+.cveducation--school {
+  margin-bottom: 15px;
 }
 
 .footer {
@@ -70,7 +236,6 @@ nav {
   height: 40px;
   background: #7a40f5;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Inter";
   font-weight: 500;
   font-size: 11px;
   color: #ffffff;
