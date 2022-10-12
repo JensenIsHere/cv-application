@@ -2,34 +2,66 @@ import React from "react";
 import "../style.css";
 
 export default class Work extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const { company, position, workFrom, workTo, workExtra, handleChange } =
+      this.props;
+
     return (
       <div className="sidebar--container personal">
         <p className="sidebar--title">Work Experience #1</p>
         <form>
           <div>
-            <label for="company_1">Company:</label>
-            <input type="text" name="company_1" id="company_1" />
+            <label for="company">Company:</label>
+            <input
+              type="text"
+              name="company"
+              id="company"
+              value={company}
+              onChange={handleChange}
+            />
           </div>
           <div>
-            <label for="position_1">Position:</label>
-            <input type="text" name="position_1" id="position_1" />
+            <label for="position">Position:</label>
+            <input
+              type="text"
+              name="position"
+              id="position"
+              value={position}
+              onChange={handleChange}
+            />
           </div>
           <div>
-            <label for="date_from_work_1">From:</label>
-            <input type="text" name="date_from_work_1" id="date_from_work_1" />
+            <label for="workFrom">From:</label>
+            <input
+              type="text"
+              name="workFrom"
+              id="workFrom"
+              value={workFrom}
+              onChange={handleChange}
+            />
           </div>
           <div>
-            <label for="date_t_worko_1">To:</label>
-            <input type="text" name="date_to_work_1" id="date_to_work_1" />
+            <label for="workTo">To:</label>
+            <input
+              type="text"
+              name="workTo"
+              id="workTo"
+              value={workTo}
+              onChange={handleChange}
+            />
           </div>
           <div>
-            <label for="present_work_1">Present</label>
-            <input type="checkbox" name="present_work_1" id="present_work_1" />
-          </div>
-          <div>
-            <label for="description_1">Description:</label>
-            <textarea name="description_1" id="description_1" />
+            <label for="workExtra">Description:</label>
+            <textarea
+              name="workExtra"
+              id="workExtra"
+              value={workExtra}
+              onChange={handleChange}
+            />
           </div>
         </form>
         <div className="sidebar--delete">

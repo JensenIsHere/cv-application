@@ -2,38 +2,66 @@ import React from "react";
 import "../style.css";
 
 export default class Education extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const { degree, school, schoolFrom, schoolTo, schoolExtra, handleChange } =
+      this.props;
+
     return (
       <div className="sidebar--container personal">
         <p className="sidebar--title">Education #1</p>
         <form>
           <div>
-            <label for="degree_1">Degree:</label>
-            <input type="text" name="degree_1" id="degree_1" />
-          </div>
-          <div>
-            <label for="school_1">School:</label>
-            <input type="text" name="school_1" id="school_1" />
-          </div>
-          <div>
-            <label for="date_from_ed_1">From:</label>
-            <input type="text" name="date_from_ed_1" id="date_from_ed_1" />
-          </div>
-          <div>
-            <label for="date_to_ed_1">To:</label>
-            <input type="text" name="date_to_ed_1" id="date_to_ed_1" />
-          </div>
-          <div>
-            <label for="present_education_1">Present</label>
+            <label for="degree">Degree:</label>
             <input
-              type="checkbox"
-              name="present_education_1"
-              id="present_education_1"
+              type="text"
+              name="degree"
+              id="degree"
+              value={degree}
+              onChange={handleChange}
             />
           </div>
           <div>
-            <label for="extra_info_1">Extra Info:</label>
-            <textarea name="extra_info_1" id="extra_info_1" />
+            <label for="school">School:</label>
+            <input
+              type="text"
+              name="school"
+              id="school"
+              value={school}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label for="schoolFrom">From:</label>
+            <input
+              type="text"
+              name="schoolFrom"
+              id="schoolFrom"
+              value={schoolFrom}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label for="schoolTo">To:</label>
+            <input
+              type="text"
+              name="schoolTo"
+              id="schoolTo"
+              value={schoolTo}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label for="schoolExtra">Extra Info:</label>
+            <textarea
+              name="schoolExtra"
+              id="schoolExtra"
+              value={schoolExtra}
+              onChange={handleChange}
+            />
           </div>
         </form>
         <div className="sidebar--delete">
